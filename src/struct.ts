@@ -106,6 +106,7 @@ export class Struct<T = unknown, S = unknown> {
     value: unknown,
     options: {
       coerce?: boolean
+      mask?: boolean
       message?: string
     } = {}
   ): [StructError, undefined] | [undefined, T] {
