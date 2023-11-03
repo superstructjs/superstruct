@@ -216,6 +216,8 @@ export function validate<T, S>(
 export type Context = {
   branch: Array<any>
   path: Array<any>
+  mask: boolean
+  coerce: boolean
 }
 
 /**
