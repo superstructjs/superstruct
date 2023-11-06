@@ -1,4 +1,4 @@
-import { assert, object, number, string } from 'superstruct'
+import { assert, object, number, string } from '@superstruct/core'
 
 // Define a `User` struct.
 const User = object({

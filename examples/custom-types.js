@@ -1,4 +1,4 @@
-import { object, string, optional, define, assert } from 'superstruct'
+import { object, string, optional, define, assert } from '@superstruct/core'
 import isEmail from 'is-email'
 import isUuid from 'is-uuid'
 import isUrl from 'is-url'

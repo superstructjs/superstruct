@@ -1,4 +1,4 @@
-import { object, number, string, validate } from 'superstruct'
+import { object, number, string, validate } from '@superstruct/core'
 
 // Define a struct to validate with.
 const User = object({

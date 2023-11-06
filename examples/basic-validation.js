@@ -6,7 +6,7 @@ import {
   object,
   optional,
   string,
-} from 'superstruct'
+} from '@superstruct/core'
 
 // Define a struct to validate with.
 const User = object({

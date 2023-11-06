@@ -6,7 +6,7 @@ import {
   number,
   object,
   string,
-} from 'superstruct'
+} from '@superstruct/core'
 
 // Define an auto-incrementing unique id.
 let uid = 1
