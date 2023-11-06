@@ -6,8 +6,6 @@
   A simple and composable way  <br/>
   to validate data in JavaScript (and TypeScript).
 </p>
-<br/>
-<br/>
 
 <p align="center">
   <a href="#usage">Usage</a> •
@@ -28,16 +26,11 @@
   </a>
 </p>
 
-<br/>
-<br/>
-
 > This is a community-maintained fork of the [original superstruct](https://github.com/ianstormtaylor/superstruct) by @ianstormtaylor. [Why the fork?](./docs/community-edition.md)
 
 Superstruct makes it easy to define interfaces and then validate JavaScript data against them. Its type annotation API was inspired by [Typescript](https://www.typescriptlang.org/docs/handbook/basic-types.html), [Flow](https://flow.org/en/docs/types/), [Go](https://gobyexample.com/structs), and [GraphQL](http://graphql.org/learn/schema/), giving it a familiar and easy to understand API.
 
 But Superstruct is designed for validating data at runtime, so it throws (or returns) detailed runtime errors for you or your end users. This is especially useful in situations like accepting arbitrary input in a REST or GraphQL API. But it can even be used to validate internal data structures at runtime when needed.
-
-<br/>
 
 ### Usage
 
@@ -140,8 +133,6 @@ if (is(data, User)) {
 
 Superstruct supports more complex use cases too like defining arrays or nested objects, composing structs inside each other, returning errors instead of throwing them, and more! For more information read the full [Documentation](#documentation).
 
-<br/>
-
 ### Why?
 
 There are lots of existing validation libraries—[`joi`](https://github.com/hapijs/joi), [`express-validator`](https://github.com/ctavan/express-validator), [`validator.js`](https://github.com/chriso/validator.js), [`yup`](https://github.com/jquense/yup), [`ajv`](https://github.com/epoberezkin/ajv), [`is-my-json-valid`](https://github.com/mafintosh/is-my-json-valid)... But they exhibit many issues that lead to your codebase becoming hard to maintain...
@@ -162,8 +153,6 @@ Of course, not every validation library suffers from all of these issues, but mo
 
 Which brings me to how Superstruct solves these issues...
 
-<br/>
-
 ### Principles
 
 1. **Customizable types.** Superstruct's power is in making it easy to define an entire set of custom data types that are specific to your application, and defined in a _single_ place, so you have full control over your requirements.
@@ -176,15 +165,11 @@ Which brings me to how Superstruct solves these issues...
 
 5. **Familiar API.** The Superstruct API was heavily inspired by [Typescript](https://www.typescriptlang.org/docs/handbook/basic-types.html), [Flow](https://flow.org/en/docs/types/), [Go](https://gobyexample.com/structs), and [GraphQL](http://graphql.org/learn/schema/). If you're familiar with any of those, then its schema definition API will feel very natural to use, so you can get started quickly.
 
-<br/>
-
 ### Demo
 
 Try out the [live demo on CodeSandbox](https://codesandbox.io/s/bold-water-s2cr8d?file=/index.js) to get an idea for how the API works, or to quickly verify your use case:
 
 [![Demo screenshot.](./docs/images/demo-screenshot.png)](https://codesandbox.io/s/bold-water-s2cr8d?file=/index.js)
-
-<br/>
 
 ### Examples
 
@@ -199,8 +184,6 @@ Superstruct's API is very flexible, allowing it to be used for a variety of use 
 - [Returning Errors](./examples/returning-errors.js)
 - [Testing Values](./examples/testing-values.js)
 - [Custom Errors](./examples/custom-errors.js)
-
-<br/>
 
 ### Documentation
 
@@ -223,8 +206,6 @@ Read the getting started guide to familiarize yourself with how Superstruct work
   - [TypeScript](./docs/api-reference/typescript)
 - [**FAQ**](./docs/resources/faq)
 - [**Resources**](./docs/resources/links)
-
-<br/>
 
 ### License
 
