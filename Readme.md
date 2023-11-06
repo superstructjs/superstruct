@@ -222,8 +222,6 @@ Read the getting started guide to familiarize yourself with how Superstruct work
 - [**FAQ**](./docs/resources/faq)
 - [**Resources**](./docs/resources/links)
 
-[![Docs screenshot.](./docs/images/docs-screenshot.png)](https://docs.superstructjs.org)
-
 <br/>
 
 ### License
