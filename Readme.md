@@ -31,6 +31,8 @@
 <br/>
 <br/>
 
+> This is a community-maintained fork of the [original superstruct](https://github.com/ianstormtaylor/superstruct) by @ianstormtaylor. [Why the fork?](./docs/community-edition.md)
+
 Superstruct makes it easy to define interfaces and then validate JavaScript data against them. Its type annotation API was inspired by [Typescript](https://www.typescriptlang.org/docs/handbook/basic-types.html), [Flow](https://flow.org/en/docs/types/), [Go](https://gobyexample.com/structs), and [GraphQL](http://graphql.org/learn/schema/), giving it a familiar and easy to understand API.
 
 But Superstruct is designed for validating data at runtime, so it throws (or returns) detailed runtime errors for you or your end users. This is especially useful in situations like accepting arbitrary input in a REST or GraphQL API. But it can even be used to validate internal data structures at runtime when needed.
