@@ -7,7 +7,7 @@ Superstruct throws detailed errors when data is invalid, so that you can build e
 `Error`
 
 ```ts
-import { StructError } from 'superstruct'
+import { StructError } from '@superstruct/core'
 
 if (error instanceof StructError) {
   ...

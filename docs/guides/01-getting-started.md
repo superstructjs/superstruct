@@ -11,7 +11,7 @@ npm install --save superstruct
 And then you can import it:
 
 ```ts
-import { object, string, number } from 'superstruct'
+import { object, string, number } from '@superstruct/core'
 
 const User = object({
   id: number(),
@@ -22,7 +22,7 @@ const User = object({
 If you'd like, you can use a wildcard import:
 
 ```ts
-import * as s from 'superstruct'
+import * as s from '@superstruct/core'
 
 const User = s.object({
   id: s.number(),
@@ -53,7 +53,7 @@ const data = {
 We'll import Superstruct and create an object-shaped struct with it:
 
 ```ts
-import { object, number, string } from 'superstruct'
+import { object, number, string } from '@superstruct/core'
 
 const User = object({
   id: number(),
@@ -67,7 +67,7 @@ This `User` struct will expect an object with an `id` property that is a number,
 Now we can use our `User` struct to validate the data. The easiest way to do this is to use the [`assert`](../reference/core.md#assert) helper, like so:
 
 ```ts
-import { assert } from 'superstruct'
+import { assert } from '@superstruct/core'
 
 assert(data, User)
 ```

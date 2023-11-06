@@ -55,7 +55,7 @@ In this case, the incorrectly defined `id` property will cause TypeScript's comp
 You can also do the reverse and infer a TypeScript type using an existing Superstruct struct with the `Infer` utility. For example:
 
 ```ts
-import { Infer } from 'superstruct'
+import { Infer } from '@superstruct/core'
 
 const User = object({
   id: number(),

@@ -42,7 +42,7 @@ But Superstruct is designed for validating data at runtime, so it throws (or ret
 Superstruct allows you to define the shape of data you want to validate:
 
 ```js
-import { assert, object, number, string, array } from 'superstruct'
+import { assert, object, number, string, array } from '@superstruct/core'
 
 const Article = object({
   id: number(),
@@ -70,7 +70,7 @@ assert(data, Article)
 Superstruct ships with validators for all the common JavaScript data types, and you can define custom ones too:
 
 ```js
-import { is, define, object, string } from 'superstruct'
+import { is, define, object, string } from '@superstruct/core'
 import isUuid from 'is-uuid'
 import isEmail from 'is-email'
 
@@ -97,7 +97,7 @@ if (is(data, User)) {
 Superstruct can also handle coercion of your data before validating it, for example to mix in default values:
 
 ```ts
-import { create, object, number, string, defaulted } from 'superstruct'
+import { create, object, number, string, defaulted } from '@superstruct/core'
 
 let i = 0
 
@@ -121,7 +121,7 @@ const user = create(data, User)
 And if you use TypeScript, Superstruct automatically ensures that your data has proper typings whenever you validate it:
 
 ```ts
-import { is, object, number, string } from 'superstruct'
+import { is, object, number, string } from '@superstruct/core'
 
 const User = object({
   id: number(),
@@ -204,23 +204,23 @@ Superstruct's API is very flexible, allowing it to be used for a variety of use 
 
 Read the getting started guide to familiarize yourself with how Superstruct works. After that, check out the full API reference for more detailed information about structs, types and errors...
 
-- [**Guide**](https://docs.superstructjs.org/guides/01-getting-started)
-  - [Getting Started](https://docs.superstructjs.org/guides/01-getting-started)
-  - [Validating Data](https://docs.superstructjs.org/guides/02-validating-data)
-  - [Coercing Data](https://docs.superstructjs.org/guides/03-coercing-data)
-  - [Refining Validation](https://docs.superstructjs.org/guides/04-refining-validation)
-  - [Handling Errors](https://docs.superstructjs.org/guides/05-handling-errors)
-  - [Using TypeScript](https://docs.superstructjs.org/guides/06-using-typescript)
-- [**Reference**](https://docs.superstructjs.org/api-reference/core)
-  - [Core](https://docs.superstructjs.org/api-reference/core)
-  - [Types](https://docs.superstructjs.org/api-reference/types)
-  - [Refinements](https://docs.superstructjs.org/api-reference/refinements)
-  - [Coercions](https://docs.superstructjs.org/api-reference/coercions)
-  - [Utilities](https://docs.superstructjs.org/api-reference/utilities)
-  - [Errors](https://docs.superstructjs.org/api-reference/errors)
-  - [TypeScript](https://docs.superstructjs.org/api-reference/typescript)
-- [**FAQ**](https://docs.superstructjs.org/resources/faq)
-- [**Resources**](https://docs.superstructjs.org/resources/links)
+- [**Guide**](./docs/guides/01-getting-started)
+  - [Getting Started](./docs/guides/01-getting-started)
+  - [Validating Data](./docs/guides/02-validating-data)
+  - [Coercing Data](./docs/guides/03-coercing-data)
+  - [Refining Validation](./docs/guides/04-refining-validation)
+  - [Handling Errors](./docs/guides/05-handling-errors)
+  - [Using TypeScript](./docs/guides/06-using-typescript)
+- [**Reference**](./docs/api-reference/core)
+  - [Core](./docs/api-reference/core)
+  - [Types](./docs/api-reference/types)
+  - [Refinements](./docs/api-reference/refinements)
+  - [Coercions](./docs/api-reference/coercions)
+  - [Utilities](./docs/api-reference/utilities)
+  - [Errors](./docs/api-reference/errors)
+  - [TypeScript](./docs/api-reference/typescript)
+- [**FAQ**](./docs/resources/faq)
+- [**Resources**](./docs/resources/links)
 
 [![Docs screenshot.](./docs/images/docs-screenshot.png)](https://docs.superstructjs.org)
 

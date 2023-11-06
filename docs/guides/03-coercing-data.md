@@ -9,7 +9,7 @@ To allow for these use cases, Superstruct has a concept called "coercion", which
 Since defaults are such a common case, Superstruct comes with a `defaulted` helper that makes defining default values easy:
 
 ```ts
-import { defaulted, create } from 'superstruct'
+import { defaulted, create } from '@superstruct/core'
 
 let i = 0
 
@@ -53,7 +53,7 @@ We've already covered default values, but sometimes you'll need to create coerci
 For example, maybe you want to ensure that a number is parsed from a string before passing it into the validator. To do that you can define a custom coercion:
 
 ```ts
-import { coerce, number, string, create } from 'superstruct'
+import { coerce, number, string, create } from '@superstruct/core'
 
 const MyNumber = coerce(number(), string(), (value) => parseFloat(value))
 ```
@@ -61,7 +61,7 @@ const MyNumber = coerce(number(), string(), (value) => parseFloat(value))
 Now instead of using `assert()` or `is()` you can use `create()` to apply your custom coercion logic:
 
 ```ts
-import { create } from 'superstruct'
+import { create } from '@superstruct/core'
 
 const data = '3.14'
 const output = create(data, MyNumber)

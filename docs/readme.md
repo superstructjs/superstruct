@@ -9,7 +9,7 @@ But Superstruct is designed for validating data at runtime, so it throws (or ret
 Superstruct allows you to define the shape of data you want to validate:
 
 ```js
-import { assert, object, number, string, array } from 'superstruct'
+import { assert, object, number, string, array } from '@superstruct/core'
 
 const Article = object({
   id: number(),
@@ -37,7 +37,7 @@ assert(data, Article)
 Superstruct ships with validators for all the common JavaScript data types, and you can define custom ones too:
 
 ```js
-import { is, define, object, string } from 'superstruct'
+import { is, define, object, string } from '@superstruct/core'
 import isUuid from 'is-uuid'
 import isEmail from 'is-email'
 
@@ -64,7 +64,7 @@ if (is(data, User)) {
 Superstruct can also handle coercion of your data before validating it, for example to mix in default values:
 
 ```ts
-import { create, object, number, string, defaulted } from 'superstruct'
+import { create, object, number, string, defaulted } from '@superstruct/core'
 
 const User = object({
   id: defaulted(number(), () => 1),
@@ -86,7 +86,7 @@ const user = create(data, User)
 And if you use TypeScript, Superstruct automatically ensures that your data has proper typings whenever you validate it:
 
 ```ts
-import { is, object, number, string } from 'superstruct'
+import { is, object, number, string } from '@superstruct/core'
 
 const User = object({
   id: number(),

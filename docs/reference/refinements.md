@@ -90,7 +90,7 @@ Infinity
 You can also define your own custom refinments that are specific to your application's requirements, like so:
 
 ```ts
-import { number, refine } from 'superstruct'
+import { number, refine } from '@superstruct/core'
 
 const Positive = refine(number(), 'positive', (value) => value >= 0)
 ```

@@ -375,7 +375,7 @@ null
 You can also define your own custom structs that are specific to your application's requirements, like so:
 
 ```ts
-import { define } from 'superstruct'
+import { define } from '@superstruct/core'
 import isEmail from 'is-email'
 import isUuid from 'is-uuid'
 

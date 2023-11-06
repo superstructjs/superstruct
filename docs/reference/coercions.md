@@ -31,7 +31,7 @@ trimmed(string())
 You can also define your own custom coercions that are specific to your application's requirements, like so:
 
 ```ts
-import { coerce, number, string, create } from 'superstruct'
+import { coerce, number, string, create } from '@superstruct/core'
 
 const MyNumber = coerce(number(), string(), (value) => parseFloat(value))
 
