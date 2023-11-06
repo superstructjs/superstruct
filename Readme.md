@@ -167,9 +167,9 @@ Which brings me to how Superstruct solves these issues...
 
 ### Demo
 
-Try out the [live demo on CodeSandbox](https://codesandbox.io/s/bold-water-s2cr8d?file=/index.js) to get an idea for how the API works, or to quickly verify your use case:
+Try out the [live demo on CodeSandbox](https://codesandbox.io/s/epic-haslett-3tzq2n?file=/index.js) to get an idea for how the API works, or to quickly verify your use case:
 
-[![Demo screenshot.](./docs/images/demo-screenshot.png)](https://codesandbox.io/s/bold-water-s2cr8d?file=/index.js)
+[![Demo screenshot.](./docs/images/demo-screenshot.png)](https://codesandbox.io/s/epic-haslett-3tzq2n?file=/index.js)
 
 ### Examples
 
