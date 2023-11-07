@@ -106,6 +106,7 @@ export class Struct<T = unknown, S = unknown> {
     value: unknown,
     options: {
       coerce?: boolean
+      mask?: boolean
       message?: string
     } = {}
   ): [StructError, undefined] | [undefined, T] {
@@ -215,6 +216,8 @@ export function validate<T, S>(
 export type Context = {
   branch: Array<any>
   path: Array<any>
+  mask: boolean
+  coerce: boolean
 }
 
 /**

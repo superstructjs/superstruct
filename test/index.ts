@@ -8,6 +8,7 @@ import {
   // eslint-disable-next-line import/named
   Context,
   create as createValue,
+  mask as maskValue,
   deprecated,
   StructError,
 } from '../src'
@@ -38,14 +39,17 @@ describe('superstruct', () => {
 
         for (const name of tests) {
           const module = require(resolve(testsDir, name))
-          const { Struct, data, create, only, skip, output, failures } = module
+          const { Struct, data, create, mask, only, skip, output, failures } =
+            module
           const run = only ? it.only : skip ? it.skip : it
           run(name, () => {
             let actual
             let err
 
             try {
-              if (create) {
+              if (mask) {
+                actual = maskValue(data, Struct)
+              } else if (create) {
                 actual = createValue(data, Struct)
               } else {
                 assertValue(data, Struct)

@@ -131,7 +131,7 @@ export function* run<T, S>(
   } = {}
 ): IterableIterator<[Failure, undefined] | [undefined, T]> {
   const { path = [], branch = [value], coerce = false, mask = false } = options
-  const ctx: Context = { path, branch }
+  const ctx: Context = { path, branch, mask, coerce }
 
   if (coerce) {
     value = struct.coercer(value, ctx)

@@ -499,9 +499,9 @@ export function union<A extends AnyStruct, B extends AnyStruct[]>(
   return new Struct({
     type: 'union',
     schema: null,
-    coercer(value) {
+    coercer(value, ctx) {
       for (const S of Structs) {
-        const [error, coerced] = S.validate(value, { coerce: true })
+        const [error, coerced] = S.validate(value, ctx)
         if (!error) {
           return coerced
         }
